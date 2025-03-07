@@ -11,7 +11,10 @@ specify the required variables and run the command `terraform init`.
 
 ```hcl
 module "authentik_group" {
-  source = "git::ssh://git@gitlab.com:terraform-child-modules-48151/terraform-authentik-group.git"
+  source  = "gitlab.com/terraform-child-modules-48151/terraform-authentik-group/local"
+  version = "1.0.0"
+
+  name = "example-group"
 }
 ```
 
@@ -25,7 +28,9 @@ module "authentik_group" {
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_authentik"></a> [authentik](#provider\_authentik) | ~> 2024.12 |
 
 ## Modules
 
@@ -33,15 +38,26 @@ No modules.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [authentik_group.this](https://registry.terraform.io/providers/goauthentik/authentik/latest/docs/resources/group) | resource |
 
 ## Inputs
 
-No inputs.
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| <a name="input_attributes"></a> [attributes](#input\_attributes) | Custom attributes definition for the group | `string` | `""` | no |
+| <a name="input_is_superuser"></a> [is\_superuser](#input\_is\_superuser) | Whether or not users in that group will be superusers | `bool` | `false` | no |
+| <a name="input_name"></a> [name](#input\_name) | Name of the group | `string` | n/a | yes |
+| <a name="input_parent"></a> [parent](#input\_parent) | The parent group | `string` | `null` | no |
+| <a name="input_roles"></a> [roles](#input\_roles) | List of roles to apply to this group | `list(string)` | `[]` | no |
+| <a name="input_users"></a> [users](#input\_users) | List of users to apply to this group | `list(string)` | `null` | no |
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_id"></a> [id](#output\_id) | The ID of this resource |
 <!-- END_TF_DOCS -->
 
 ## Authors
