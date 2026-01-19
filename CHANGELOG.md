@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.0.0](https://gitlab.com/terraform-child-modules-48151/terraform-authentik-group/compare/v1.1.0...v2.0.0) (2026-01-19)
+
+### ⚠ BREAKING CHANGES
+
+* **terraform:** The attribute `parent` has been renamed to `parents`.
+
+### Features
+
+* **terraform:** Add support for Authentik 2025.12 ([813a9c5](https://gitlab.com/terraform-child-modules-48151/terraform-authentik-group/commit/813a9c583035a56c4791af7d372e1c671b9d2b42))
+
 ## [1.1.0](https://gitlab.com/terraform-child-modules-48151/terraform-authentik-group/compare/v1.0.0...v1.1.0) (2025-05-20)
 
 ### Features
