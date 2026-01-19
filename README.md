@@ -49,7 +49,7 @@ No modules.
 | <a name="input_attributes"></a> [attributes](#input\_attributes) | Custom attributes definition for the group | `string` | `""` | no |
 | <a name="input_is_superuser"></a> [is\_superuser](#input\_is\_superuser) | Whether or not users in that group will be superusers | `bool` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the group | `string` | n/a | yes |
-| <a name="input_parent"></a> [parent](#input\_parent) | The parent group | `string` | `null` | no |
+| <a name="input_parents"></a> [parents](#input\_parents) | The parents group | `list(string)` | `[]` | no |
 | <a name="input_roles"></a> [roles](#input\_roles) | List of roles to apply to this group | `list(string)` | `[]` | no |
 | <a name="input_users"></a> [users](#input\_users) | List of users to apply to this group | `list(string)` | `null` | no |
 

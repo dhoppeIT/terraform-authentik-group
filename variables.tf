@@ -15,10 +15,10 @@ variable "is_superuser" {
   description = "Whether or not users in that group will be superusers"
 }
 
-variable "parent" {
-  type        = string
-  default     = null
-  description = "The parent group"
+variable "parents" {
+  type        = list(string)
+  default     = []
+  description = "The parents group"
 }
 
 variable "roles" {

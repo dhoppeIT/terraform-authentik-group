@@ -3,7 +3,7 @@ resource "authentik_group" "this" {
 
   attributes   = var.attributes
   is_superuser = var.is_superuser
-  parent       = var.parent
+  parents      = var.parents
   roles        = var.roles
   users        = var.users
 }
