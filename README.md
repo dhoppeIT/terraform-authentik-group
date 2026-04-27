@@ -22,15 +22,15 @@ module "authentik_group" {
 ## Requirements
 
 | Name | Version |
-|------|---------|
+| ---- | ------- |
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
-| <a name="requirement_authentik"></a> [authentik](#requirement\_authentik) | ~> 2025.0 |
+| <a name="requirement_authentik"></a> [authentik](#requirement\_authentik) | ~> 2026.0 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| <a name="provider_authentik"></a> [authentik](#provider\_authentik) | ~> 2025.0 |
+| ---- | ------- |
+| <a name="provider_authentik"></a> [authentik](#provider\_authentik) | ~> 2026.0 |
 
 ## Modules
 
@@ -39,13 +39,13 @@ No modules.
 ## Resources
 
 | Name | Type |
-|------|------|
+| ---- | ---- |
 | [authentik_group.this](https://registry.terraform.io/providers/goauthentik/authentik/latest/docs/resources/group) | resource |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
+| ---- | ----------- | ---- | ------- | :------: |
 | <a name="input_attributes"></a> [attributes](#input\_attributes) | Custom attributes definition for the group | `string` | `""` | no |
 | <a name="input_is_superuser"></a> [is\_superuser](#input\_is\_superuser) | Whether or not users in that group will be superusers | `bool` | `false` | no |
 | <a name="input_name"></a> [name](#input\_name) | Name of the group | `string` | n/a | yes |
@@ -56,7 +56,7 @@ No modules.
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+| ---- | ----------- |
 | <a name="output_id"></a> [id](#output\_id) | The ID of this resource |
 <!-- END_TF_DOCS -->
 
